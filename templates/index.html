@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>image upload</title>
+</head>
+<body>
+    <h3>Upload new File</h3>
+    <form action = "/success" method="post" enctype="multipart/form-data">
+      <input type="file" name="file1">
+      <input type="submit">
+    </form>
+    {% if check == True %}
+        <h3> File Upload successful </h3>
+        <br/>
+        <h3>Please select model:</h3>
+        <form action = "/process" method="post" enctype="multipart/form-data">
+            <input type="radio" name="options" id="option1" value="dpt_large"> dpt_large </input>
+            <input type="radio" name="options" id="option2" value="dpt_hybrid"> dpt_hybrid </input>
+            <input type="radio" name="options" id="option3" value="midas_v21_small"> midas_v21_small </input>
+            <input type="radio" name="options" id="option4" value="midas_v21"> midas_v21 </input><br>
+
+            <input type="hidden" value={{name}} name="file">
+            <input type="submit">
+        </form>
+    {% endif %}
+
+</body>
+</html>

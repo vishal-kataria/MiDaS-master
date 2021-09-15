@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% if check == True %}
+        <h3> {{name}} </h3>
+        <h3> {{file}} </h3>
+        <form action = "/download1" method="post" enctype="multipart/form-data">
+            <input type="hidden" value={{file}} name="file">
+            <input type="submit" value="download pfm file">
+        </form>
+        <form action = "/download2" method="post" enctype="multipart/form-data">
+            <input type="hidden" value={{file}} name="file">
+            <input type="submit" value="download png file">
+        </form>
+    <br/><br/>
+        <form action = "/delete" method="post" enctype="multipart/form-data">
+            <input type="submit" value="delete and return to home page">
+        </form>
+    {% endif %}
+</head>
+<body>
+
+</body>
+</html>
