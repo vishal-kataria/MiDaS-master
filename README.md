@@ -1,3 +1,9 @@
+
+https://files.pythonhosted.org/packag...
+
+https://public.dhe.ibm.com/ibmdl/expo...
+
+
 ## Towards Robust Monocular Depth Estimation: Mixing Datasets for Zero-shot Cross-dataset Transfer
 
 This repository contains code to compute depth from a single image. It accompanies our [paper](https://arxiv.org/abs/1907.01341v3):
